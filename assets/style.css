@@ -13,3 +13,155 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 7.5rem;
 }
+
+section {
+    padding: 4rem 10%;
+}
+
+.main {
+    height: 100vh;
+    background: url('/outdoor-expeditions/assets/images/main-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 2rem 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-left ion-icon {
+    font-size: 4.5rem;
+    color: brown;
+    margin-right: 1rem;
+}
+
+.navbar-left ion-icon:hover,
+.navbar-right ion-icon:hover,
+.navbar-left h2:hover {
+    color: white;
+}
+
+.navbar-right ion-icon:hover {
+    cursor: pointer;
+}
+
+.navbar-left h2 {
+    font-size: 4.5rem;
+    color: brown;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-right ion-icon {
+    font-size: 4.5rem;
+    color: brown;
+    margin-right: 2rem;
+}
+
+.home-div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 4rem;
+    border-radius: 4rem;
+}
+
+.home-div h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.home-div h2 span {
+    text-decoration: underline;
+}
+
+.home-button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button-div button {
+    font-size: 2rem;
+    padding: 1.5rem 4rem;
+    border-radius: 2rem;
+    background-color: brown;
+    color: white;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.home-button-div button:hover {
+    cursor: pointer;
+    background-color: rgb(214, 57, 57);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-div {
+        padding: 5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar-left h2 {
+        font-size: 3rem;
+    }
+
+    .navbar-left ion-icon {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .home-button-div {
+        flex-direction: column;
+    }
+    
+    .home-button-div button {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .home-div {
+        padding: 3rem;
+    }
+
+    .home-div h2 {
+        font-size: 3.5rem;
+    }
+}
