@@ -125,10 +125,6 @@ section {
     background-color: rgb(214, 57, 57);
 }
 
-/* .clearance {
-    height: 75vh;
-} */
-
 .clearance-heading {
     margin-top: 5rem;
     display: flex;
@@ -146,38 +142,47 @@ section {
     margin-left: 1rem;
 }
 
-.clearance-container {
+.clearance-container,
+.trending-products {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5rem;
 }
 
-.clearance-box {
+.clearance-box,
+.trending-box {
     border: 0.2rem solid lightgrey;
     margin: 0rem 1rem 0rem 1rem;
     margin-bottom: 2rem;
     width: 25rem;
-    /* margin: -0.2rem; */
 }
 
-.clearance-box:hover {
+.clearance-box:hover,
+.trending-box:hover {
     border: 0.2rem solid black;
 }
 
-.clearance-box .image {
+.clearance-box .image,
+.trending-box .image {
     height: 20rem;
     overflow: hidden;
     padding: 1rem;
 }
 
-.clearance-box .image img {
+.clearance-box .image img,
+.trending-box .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.clearance-description h4 {
+.green-canoe {
+    object-fit: contain !important;
+}
+
+.clearance-description h4,
+.trending-description h4 {
     margin-top: 5rem;
     font-size: 2rem;
     margin-left: 1.5rem;
@@ -185,7 +190,8 @@ section {
     font-weight: 500;
 }
 
-.clearance-description p {
+.clearance-description p,
+.trending-description p {
     margin-left: 1.5rem;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -233,7 +239,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} 
 
 .trending-heading h2 {
     font-size: 4rem;
@@ -250,8 +256,52 @@ section {
     margin-right: 6rem;
 }
 
+.trending-description p {
+    color: black;
+}
+
 .black-background {
     background-color: black;
+    color: white;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-top p {
+    color: white;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.footer-top p:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-bottom h2 {
+    color: white;
+    font-size: 3rem;
+    margin-left: 1rem ;
+}
+
+.footer-bottom ion-icon {
+    font-size: 3.5rem;
     color: white;
 }
 
@@ -260,7 +310,8 @@ section {
         padding: 2rem 4%;
     }
 
-    .clearance-box {
+    .clearance-box,
+    .trending-box {
         width: 20rem;
     }
 
