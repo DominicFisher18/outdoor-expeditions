@@ -18,6 +18,14 @@ section {
     padding: 4rem 10%;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
 .main {
     height: 100vh;
     background: url('/outdoor-expeditions/assets/images/main-background.jpg');
@@ -41,6 +49,10 @@ section {
     flex-direction: row;
     justify-content: space-around;
     background-color:rgba(0, 0, 0, 0.2);
+}
+
+.header.onscroll {
+    background-color:rgba(0, 0, 0, 0.9);
 }
 
 .navbar-left {
@@ -84,6 +96,10 @@ section {
     margin-right: 2rem;
 }
 
+.hamburger.rotate {
+    transform: rotate(90deg);
+}
+
 .home-div {
     display: flex;
     flex-direction: column;
@@ -125,6 +141,42 @@ section {
     background-color: rgb(214, 57, 57);
 }
 
+.hidden {
+    display: none;
+}
+
+.table-of-contents {
+    background-color:rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 9.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-190rem);
+    /* z-index: 101; */
+}
+
+.table-of-contents.activate {
+    transform: translateX(0);
+}
+
+.table-of-contents div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-of-contents div a {
+    color: white;
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.table-of-contents div a:hover {
+    color: brown;
+}
+
 .clearance-heading {
     margin-top: 5rem;
     display: flex;
@@ -135,6 +187,7 @@ section {
 
 .clearance-heading h2 {
     font-size: 4.5rem;
+    color: black ;
 }
 
 .clearance-heading ion-icon {
@@ -304,6 +357,7 @@ section {
     font-size: 3.5rem;
     color: white;
 }
+
 
 @media (max-width: 1200px) {
     .trending {

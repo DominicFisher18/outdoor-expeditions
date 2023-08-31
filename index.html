@@ -18,7 +18,7 @@
         </div>
         <div class="navbar-right">
             <ion-icon name="cart"></ion-icon>
-            <ion-icon name="menu"></ion-icon>
+            <ion-icon name="menu" class=" hamburger hamburger-menu"></ion-icon>
         </div>
     </header>
 
@@ -29,11 +29,21 @@
                     Your one stop shop<br><span>for all</span> your outdoor needs!
                 </h2>
                 
-            </div>
+            </div> 
             <div class="home-button-div">
-                <button>See Deals</button>
-                <button>View All</button>
+                <button class="see-deals">See Deals</button>
+                <button class="js-view-all">View All</button>
             </div>
+        </div>
+    </section>
+
+    <section id="table-of-contents" class="table-of-contents hidden">
+        <div class="toc-div">
+            <a href="#fishing">Fishing</a>
+            <a href="#camping">Camping</a>
+            <a href="#hiking">Hiking</a>
+            <a href="#backyard">Backyard</a>
+            <a href="#food">Food</a>
         </div>
     </section>
 
@@ -43,15 +53,17 @@
             <ion-icon name="arrow-down"></ion-icon> 
         </div>
         <div class="clearance-container">
-            <div class="clearance-box">
-                <div class="image">
-                    <img src="/outdoor-expeditions/assets/images/tent.png">
+            <a href="/outdoor-expeditions/product-page.html">
+                <div class="clearance-box">
+                    <div class="image">
+                        <img src="/outdoor-expeditions/assets/images/tent.png">
+                    </div>
+                    <div class="clearance-description">
+                        <h4>Light Blue Tent</h4>
+                        <p>$30 <span>(was $80!)</span></p>
+                    </div>
                 </div>
-                <div class="clearance-description">
-                    <h4>Light Blue Tent</h4>
-                    <p>$30 <span>(was $80!)</span></p>
-                </div>
-            </div>
+            </a>
             <div class="clearance-box">
                 <div class="image">
                     <img src="/outdoor-expeditions/assets/images/round-grill.png">
@@ -63,7 +75,7 @@
             </div>
             <div class="clearance-box">
                 <div class="image">
-                    <img src="/outdoor-expeditions/assets/images/trekking-pole.jpgs">
+                    <img src="/outdoor-expeditions/assets/images/trekking-pole.jpg">
                 </div>
                 <div class="clearance-description">
                     <h4>Trekking Poles</h4>
@@ -81,7 +93,7 @@
             </div>
         </div>
         <div class="clearance-button-div">
-            <button class="view-all">View All Products</button>
+            <button class="view-all js-view-all-2">View All Products</button>
         </div>
     </section>
 
