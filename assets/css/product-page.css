@@ -1,0 +1,40 @@
+.header {
+    background-color:rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-left h2,
+.navbar-right ion-icon,
+.navbar-left ion-icon {
+    color: white !important;
+}
+
+.product-page-footer {
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    top: 10;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 0.1rem solid black;
+}
+
+.product-page-footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.product-page-footer div button {
+    font-size: 2.5rem;
+    padding: 1rem 4rem;
+    border-radius: 4rem;
+    background-color: white;
+    border: 0.1rem solid white;
+}
+
+.product-page-footer div button:hover {
+    border: 0.1rem solid black;
+}
