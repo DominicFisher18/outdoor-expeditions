@@ -362,6 +362,9 @@ a:visited {
 }
 
 
+
+
+
 @media (max-width: 1200px) {
     .trending {
         padding: 2rem 4%;
@@ -398,6 +401,8 @@ a:visited {
     .navbar-left ion-icon {
         font-size: 6rem;
     }
+
+    
 }
 
 @media (max-width: 390px) {

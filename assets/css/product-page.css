@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     background-color: white;
-    border: 0.1rem solid black;
+    border: 0.1rem solid brown;
 }
 
 .product-page-footer div {
@@ -36,5 +36,124 @@
 }
 
 .product-page-footer div button:hover {
-    border: 0.1rem solid black;
+    border: 0.1rem solid darkgreen;
+}
+
+.products-header {
+    font-size: 4rem;
+    margin-top: 10rem;
+    text-align: center;
+    border-bottom: 0.1rem solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.products-header h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.product-box {
+    border: 0.2rem solid lightgrey;
+    margin: 0rem 3rem 0rem 3rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+}
+
+.product-box:hover {
+    border: 0.2rem solid darkgreen;
+}
+
+.product-box .image {
+    height: 20rem;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.product-box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-description h4 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.product-description p {
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: brown;
+}
+
+.all-products,
+.fishing-products,
+.camping-products,
+.hiking-products,
+.backyard-products,
+.food-products {
+    height: 120vh;
+}
+
+@media (max-width: 2000px) {
+    .all-products {
+        height: 250vh;
+    }
+}
+
+@media (max-width: 1500px) {
+    .fishing-products,
+    .camping-products,
+    .hiking-products,
+    .backyard-products,
+    .food-products {
+        height: 150vh;
+    }
+
+    .all-products {
+        height: 300vh;
+    }
+}
+
+@media (max-width: 991px) {
+    .all-products {
+        height: 350vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .product-page-footer div button {
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .product-page-footer div {
+        flex-wrap: wrap;
+    }
+
+    .fishing-products,
+    .camping-products,
+    .hiking-products,
+    .backyard-products,
+    .food-products {
+        height: 200vh;
+    }
+
+    .all-products {
+        height: 600vh;
+    }
 }
