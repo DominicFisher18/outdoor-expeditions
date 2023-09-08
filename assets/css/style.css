@@ -216,7 +216,7 @@ a:visited {
 
 .clearance-box:hover,
 .trending-box:hover {
-    border: 0.2rem solid black;
+    border: 0.2rem solid green;
 }
 
 .clearance-box .image,
