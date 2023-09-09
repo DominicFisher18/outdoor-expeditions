@@ -17,3 +17,158 @@ html {
 section {
     padding: 4rem 10%;
 }
+
+
+
+.item-overlook {
+    margin-top: 8rem;
+}
+
+.item-overlook .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 5rem;
+    height: 70vh;
+}
+
+.item-overlook .box-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-left {
+    margin-top: 10rem;
+}
+
+.item-overlook .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem;
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: green;
+    border-radius: 10rem;
+}
+
+.box-right h3 {
+    font-size: 2rem;
+    color: white;
+    padding: 0rem 7rem 0rem 7rem;
+}
+
+.box-right-h2 {
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.add-to-cart-div {
+    margin-top: 3rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.add-to-cart-div-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 12rem 1rem 12rem;
+}
+
+.add-to-cart-div button {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    background-color: white;
+    border: 0.1rem solid black;
+}
+
+.add-to-cart-div p {
+    font-size: 3rem;
+    color: brown;
+}
+
+.price-and-purchase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-and-purchase h2 {
+    color: brown;
+    text-decoration: none;
+    margin-bottom: 0rem;
+    font-size: 3rem;
+}
+
+.price-and-purchase button {
+    font-size: 2rem;
+    background-color: white;
+}
+
+.add-to-cart-div button:hover,
+.price-and-purchase button:hover {
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 2560px) {
+    .box-right-h2 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .add-to-cart-div {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .add-to-cart-div-container {
+        margin: 1rem 8rem 1rem 8rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .price-and-purchase h2 {
+        font-size: 3rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .add-to-cart-div {
+        margin-bottom: 3rem;
+    }
+
+    .box-right-h2 {
+        margin-top: 3rem;
+    }
+
+    .box-right {
+        border-radius: 5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .add-to-cart-div-container {
+        margin: 1rem 4rem 1rem 4rem;
+    }
+
+    .price-and-purchase h2 {
+        font-size: 2rem;
+    }
+}

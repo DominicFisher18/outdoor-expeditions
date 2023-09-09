@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/outdoor-expeditions/assets/css/products1-18.css">
+    <link rel="stylesheet" href="/outdoor-expeditions/assets/css/product-page.css">
+    <link rel="stylesheet" href="/outdoor-expeditions/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,600&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
@@ -11,6 +13,56 @@
     <title>Product 15</title>
 </head>
 <body>
-    
+    <header id="header" class="header">
+        <div class="navbar-left">
+            <ion-icon name="bonfire"></ion-icon>
+            <h2>Outdoor Expeditions</h2>
+        </div>
+        <div class="navbar-right">
+            <ion-icon name="cart"></ion-icon>
+            <ion-icon name="menu" class=" hamburger hamburger-menu"></ion-icon>
+        </div>
+    </header>
+
+    <section id="item-overlook" class="item-overlook">
+        <div class="box-container">
+            <div class="box box-left">
+                <div class="box-left-img">
+                    <img src="/outdoor-expeditions/assets/images/spatula.jpg">
+                </div>
+            </div>
+            <div class="box box-right">
+                <h2 class="box-right-h2">Steel Spatula</h2>
+                <h3>
+                    This steel spatula goes hand in hand with our round grill, and would assuredly make you one of the 
+                    neighborhood favorites.  The steel guarantees a long life without much wear and tear.
+                </h3>
+                <div class="add-to-cart-div">
+                    <div class="add-to-cart-div-container">
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                    <div class="price-and-purchase">
+                        <h2>$30.00</h2>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="table-of-contents" class="table-of-contents hidden">
+        <div class="toc-div">
+            <a class="home-link" href="/outdoor-expeditions/index.html">Home</a>
+            <a onclick="changePage()">Our Products</a>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="/outdoor-expeditions/assets/js/script.js"></script>
+    <script src="/outdoor-expeditions/assets/js/index.js"></script>
+    <script src="/outdoor-expeditions/assets/js/product-page.js"></script>
 </body>
 </html>
