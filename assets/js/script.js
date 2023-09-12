@@ -26,6 +26,8 @@ function hideOtherSections() {
 // script
 const menuButton = document.querySelector('.hamburger-menu')
 let tableOfContents = document.querySelector('.table-of-contents')
+let checkoutButton = document.querySelector('.checkout')
+let checkoutMenu = document.querySelector('.checkout-menu')
 
 menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('rotate')
@@ -35,9 +37,15 @@ menuButton.addEventListener('click', () => {
         .classList.add('onscroll')
 })
 
+checkoutButton.addEventListener('click', () => {
+    checkoutMenu.classList.remove('hidden')
+    checkoutMenu.classList.add('activate')
+})
+
 document.onscroll = () => {
     tableOfContents.classList.add('hidden')
     menuButton.classList.remove('rotate')
+    checkoutMenu.classList.add('hidden')
     
     if (window.scrollY > 0) {
         document.querySelector('.header')

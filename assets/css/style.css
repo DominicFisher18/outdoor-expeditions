@@ -148,22 +148,25 @@ a:visited {
     display: none;
 }
 
-.table-of-contents {
+.table-of-contents,
+.checkout-menu {
     background-color:rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 9.5rem;
     left: 0;
     right: 0;
     bottom: 0;
-    transform: translateX(-190rem);
+    transform: translateX(-200rem);
     z-index: 101;
 }
 
-.table-of-contents.activate {
+.table-of-contents.activate,
+.checkout-menu.activate {
     transform: translateX(0);
 }
 
-.table-of-contents div {
+.table-of-contents div,
+.checkout-menu div {
     display: flex;
     flex-direction: column;
     align-items: center;

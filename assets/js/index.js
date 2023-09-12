@@ -1,9 +1,9 @@
 // let seeDealsBtn = document.querySelector('.see-deals')
 
-document.querySelector('.see-deals')
-    .addEventListener('click', () => {
-        location.href = "#clearance"
-    })
+// document.querySelector('.see-deals')
+//     .addEventListener('click', () => {
+//         location.href = "#clearance"
+//     })
 
 document.querySelector('.js-view-all')
     .addEventListener('click', productPage)

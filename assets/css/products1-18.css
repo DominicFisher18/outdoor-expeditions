@@ -121,6 +121,19 @@ section {
     background-color: black;
 }
 
+.return-button {
+    margin-top: 2rem;
+    background-color: green;
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.white {
+    color: white;
+    font-size: 3rem;
+}
+
 @media (max-width: 2560px) {
     .box-right-h2 {
         font-size: 4rem;
@@ -160,6 +173,10 @@ section {
 
     .box-right {
         border-radius: 5rem;
+    }
+
+    .return-button {
+        margin-bottom: 2rem;
     }
 }
 
