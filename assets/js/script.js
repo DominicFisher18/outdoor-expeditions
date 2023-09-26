@@ -21,7 +21,7 @@ function hideOtherSections() {
             section.classList.add('hidden')
         }
     }
-}    
+}   
 
 // script
 const menuButton = document.querySelector('.hamburger-menu')
@@ -56,19 +56,7 @@ document.onscroll = () => {
     }
 } 
 
-// index
 
-function productPage() {
-    location.href = "/outdoor-expeditions/product-page.html"
-    console.log('hello')
-    event.preventDefault()
-}
-
-function changePage() {
-    location.href = "/outdoor-expeditions/product-page.html";
-    console.log('hello')
-    event.preventDefault()
-}
 
 
 

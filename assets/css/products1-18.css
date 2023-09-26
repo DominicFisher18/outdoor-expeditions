@@ -52,7 +52,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: green;
+    background-color: brown;
     border-radius: 10rem;
 }
 
@@ -123,7 +123,7 @@ section {
 
 .return-button {
     margin-top: 2rem;
-    background-color: green;
+    background-color: brown;
     color: white;
     font-size: 3rem;
     text-decoration: underline;

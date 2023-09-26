@@ -16,7 +16,7 @@
     <header id="header" class="header">
         <div class="navbar-left">
             <ion-icon name="bonfire"></ion-icon>
-            <h2>Outdoor Expeditions</h2>
+            <h2 class="header-title">Outdoor Expeditions</h2>
         </div>
         <div class="navbar-right">
             <ion-icon name="cart" class="checkout"></ion-icon>
@@ -36,9 +36,13 @@
         </div>
     </section>
 
-    <section id="checkout-menu" class="checkout-menu hidden">
-        <div class="checkout-div white">
-
+    <section id="checkout-menu" class="checkout-menu">
+        <div class="cart-items white">
+            
+        </div>
+        <div class="cart-total">
+            <span class="cart-total-price">$0</span>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
         </div>
     </section>
 
@@ -59,7 +63,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal1()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -74,7 +78,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal2()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -89,7 +93,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal3()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -104,7 +108,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal4()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -119,7 +123,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal5()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -134,7 +138,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal6()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -149,7 +153,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal7()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -164,7 +168,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal8()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -179,7 +183,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal9()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -194,7 +198,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal10()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -209,7 +213,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal11()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -224,7 +228,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal12()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -239,7 +243,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal13()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -254,7 +258,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal14()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -269,7 +273,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal15()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -284,7 +288,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal16()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -299,7 +303,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal17()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -314,7 +318,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal18()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
         </div>
@@ -337,7 +341,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal1()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -352,7 +356,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal2()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -367,7 +371,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal3()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
         </div>
@@ -390,7 +394,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal4()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -405,7 +409,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal5()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -420,7 +424,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal6()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -435,7 +439,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal7()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -450,7 +454,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal8()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
         </div>
@@ -473,7 +477,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal9()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -488,7 +492,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal10()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -503,7 +507,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal11()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -518,7 +522,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal12()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
         </div>
@@ -541,7 +545,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal13()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -556,7 +560,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal14()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -571,7 +575,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal15()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -586,7 +590,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal16()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
         </div>
@@ -608,7 +612,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal17()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
             <div>
@@ -623,7 +627,7 @@
                 </div>
                 <div class="info-and-button">
                     <button class="more-info" onclick="activateModal18()">more info</button>
-                    <button class="add-to-cart-btn add-to-cart">add to cart</button>
+                    <button class="shop-item-button add-to-cart">add to cart</button>
                 </div>
             </div>
         </div>
@@ -650,13 +654,13 @@
     <section id="item-overlook modal" class="item-overlook modal modal2 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/fishing-hat.jpg ">
                 </div>
             </div>
             <div class="box box-right">
                 <h2 class="box-right-h2 item-name">Fishing Hat</h2>
-                <h3>
+                <h3 class="description">
                     Never worry about the bright sun of pesky bugs landing on your head ever again!
                     This high quality hat will provide all sorts of protection while also keeping you look stylish on the lake.
                 </h3>
@@ -668,7 +672,7 @@
     <section id="item-overlook modal" class="item-overlook modal modal3 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/tackle-box.jpg">
                 </div>
             </div>
@@ -686,12 +690,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal4 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/tent.png">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Light Blue Tent</h2>
+                <h2 class="box-right-h2">Blue Tent</h2>
                 <h3>
                     This is one of the best 2 person tents on the market, coming in hot with amazing weather shielding and beautiful color.
                     Never worry about rain or snow ruining your sleep ever again! On sale for a limited time.
@@ -704,12 +708,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal5 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/hammock.png">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Colorful Hammock</h2>
+                <h2 class="box-right-h2">Hammock</h2>
                 <h3>
                     This is what we imagine Joseph layed down in after he took his coat of many colors off. You won't find
                     a more eye catching hammock on the market at such an affordable price!
@@ -722,12 +726,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal6 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/green-canoe.png">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Green Canoe</h2>
+                <h2 class="box-right-h2">Canoe</h2>
                 <h3>
                     This canoe is the perfect choice for a lake day with friends, or a solo adventure on your own.
                     High quality material makes this one of the best and smartest canoe purchases you could make!
@@ -740,12 +744,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal7 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/firewood.jpg">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Firewood Bundle</h2>
+                <h2 class="box-right-h2">Firewood</h2>
                 <h3>
                     Never worry about going cold on a camping trip ever again!  Our long lasting firewood is the best option
                     for a hiking trip or the backyard fire pit.
@@ -758,7 +762,7 @@
     <section id="item-overlook modal" class="item-overlook modal modal8 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/sleeping-bag.jpg">
                 </div>
             </div>
@@ -776,12 +780,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal9 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/trekking-pole.jpg">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Trekking Poles</h2>
+                <h2 class="box-right-h2">Trekking</h2>
                 <h3>
                     Keep yourself in top shape and safety with these state of the art trekking poles.  A hikers best
                     friend, these sturdy poles will help you through the roughest trails the world has to offer!
@@ -794,7 +798,7 @@
     <section id="item-overlook modal" class="item-overlook modal modal10 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/hiking-boots.jpg">
                 </div>
             </div>
@@ -812,12 +816,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal11 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/hiking-backpack.jpg">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Hiking Backpack</h2>
+                <h2 class="box-right-h2">Backpack</h2>
                 <h3>
                     Our state of the art backpacks come with everything you could need, including plenty of storage space
                     as well as amazing water protection.  Buy this and have all of your packing troubles fade away!
@@ -830,12 +834,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal12 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/hiking-headlamp.jpg">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Hiking Headlamp</h2>
+                <h2 class="box-right-h2">Headlamp</h2>
                 <h3>
                     Safety is one of the most important things when it comes to a fun hiking trip. This hiking headlamp
                     guarantees that you will see anything in your path so nothing can catch you off guard.
@@ -848,12 +852,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal13 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/round-grill.png">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Black Round Grill</h2>
+                <h2 class="box-right-h2">Black Grill</h2>
                 <h3>
                     This grill will make you the coolest family in the neighborhood.  Perfect heat distribution
                     allows for the perfect burgers and other dishes to impress even the most hardcore grill users.
@@ -866,12 +870,12 @@
     <section id="item-overlook modal" class="item-overlook modal modal14 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/fence.jpg">
                 </div>
             </div>
             <div class="box box-right">
-                <h2 class="box-right-h2">Custom Fence</h2>
+                <h2 class="box-right-h2">Fence</h2>
                 <h3>
                     Need a place for the kids to play, or a nice space for the dogs to run around?  Our custom fences are the perfect option,
                     coming with many selectable colors and wood types!
@@ -884,7 +888,7 @@
     <section id="item-overlook modal" class="item-overlook modal modal15 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/spatula.jpg">
                 </div>
             </div>
@@ -902,7 +906,7 @@
     <section id="item-overlook modal" class="item-overlook modal modal16 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/birdfeeder.jpg">
                 </div>
             </div>
@@ -920,7 +924,7 @@
     <section id="item-overlook modal" class="item-overlook modal modal17 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/trail-mix.jpg">
                 </div>
             </div>
@@ -938,7 +942,7 @@
     <section id="item-overlook modal" class="item-overlook modal modal18 hidden">
         <div class="box-container">
             <div class="box box-left">
-                <div class="box-left-img">
+                <div class="box-left-img modal-img">
                     <img src="/outdoor-expeditions/assets/images/beef-jerky.jpeg">
                 </div>
             </div>
@@ -975,6 +979,6 @@
     <script>
         window.onload = showProducts('All')
     </script>
-    <!-- <script src="/outdoor-expeditions/assets/js/index.js"></script> -->
+    
 </body>
 </html>
