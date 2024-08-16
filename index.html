@@ -17,7 +17,7 @@
             <h2>Outdoor Expeditions</h2>
         </div>
         <div class="navbar-right">
-            <ion-icon name="cart"></ion-icon>
+            <ion-icon name="cart" onclick="location.href = '/outdoor-expeditions/cart-page.html'"></ion-icon>
             <ion-icon name="menu" class=" hamburger hamburger-menu"></ion-icon>
         </div>
     </header>
@@ -34,7 +34,7 @@
                 <a href="#clearance">
                     <button class="see-deals">See Deals</button>
                 </a>
-                <button class="js-view-all">View All</button>
+                <button class="js-view-all" onclick="location.href = 'product-page.html'">View All</button>
             </div>
         </div>
     </section>
@@ -103,7 +103,7 @@
             </a>
         </div>
         <div class="clearance-button-div">
-            <button class="view-all js-view-all-2">View All Products</button>
+            <button class="view-all js-view-all-2" onclick="location.href = 'product-page.html'">View All Products</button>
         </div>
     </section>
 
@@ -165,6 +165,10 @@
         </div>
     </section>
 
+    <section>
+        <div class="change-name">Welcome to Denver</div>
+    </section>
+
     <footer id="footer" class="footer">
         <div class="footer-top">
             <p>Newsletter</p>
@@ -182,5 +186,7 @@
     <script src="/outdoor-expeditions/assets/js/script.js"></script>
     <script src="/outdoor-expeditions/assets/js/index.js"></script>
     <script src="/outdoor-expeditions/assets/js/product-page.js"></script>
+    <script src="/outdoor-expeditions/assets/js/weather.js"></script>
+    <script type="module" src="/outdoor-expeditions/assets/js/products.js"></script>
 </body>
 </html>
