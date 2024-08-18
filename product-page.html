@@ -19,7 +19,7 @@
             <h2 class="header-title">Outdoor Expeditions</h2>
         </div>
         <div class="navbar-right">
-            <ion-icon name="cart" class="checkout"></ion-icon>
+            <ion-icon name="cart" class="checkout" onclick="location.href = '/outdoor-expeditions/cart-page.html'"></ion-icon>
             <ion-icon name="menu" class=" hamburger hamburger-menu"></ion-icon>
         </div>
     </header>
@@ -36,7 +36,11 @@
         </div>
     </section>
 
-    <section id="checkout-menu" class="checkout-menu">
+    <section class="product-js-container product-container">
+
+    </section>
+
+    <!-- <section id="checkout-menu" class="checkout-menu">
         <div class="cart-items white">
             
         </div>
@@ -955,7 +959,7 @@
                 <button class="return-button" onclick="closeModal18()">return</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section id="overlay" class="overlay hidden"></section>
@@ -973,9 +977,9 @@
 
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-    <script src="/outdoor-expeditions/assets/js/script.js"></script>
-    <script src="/outdoor-expeditions/assets/js/product-page.js"></script>
-    <script src="/outdoor-expeditions/assets/js/add-to-cart.js"></script>
+    <script type="module" src="/outdoor-expeditions/assets/js/script.js"></script>
+    <script type="module" src="/outdoor-expeditions/assets/js/product-page.js"></script>
+    <script type="module" src="/outdoor-expeditions/assets/js/add-to-cart.js"></script>
     <script type="module" src="/outdoor-expeditions/assets/js/products.js"></script>
     <script>
         window.onload = showProducts('All')
