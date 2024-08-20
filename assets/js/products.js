@@ -1,3 +1,5 @@
+import { cart } from "./cart.js"
+
 const products = [{
     image: '/outdoor-expeditions/assets/images/fishing-pole.jpg',
     name: 'Black Fishing Pole',
@@ -108,6 +110,8 @@ const products = [{
     subcategory: 'Food'
 }]
 
+
+
 let productsHTML = ''
 
 products.forEach((product) => {
@@ -117,10 +121,49 @@ products.forEach((product) => {
                     </div>
                     <div class="product-description">
                         <h4 class="item-name">${product.name}</h4>
-                        <p class="item-price">$${product.priceDollars}</p>
+                        <div class="price-cart-container">
+                            <p class="item-price">$${product.priceDollars}</p>
+                            <button class="add-to-cart js-add-to-cart" data-product-name="${product.name}">Add To Cart</button>
+                        </div>
                     </div>
                 </div>
                 `
 })
 
 document.querySelector('.product-js-container').innerHTML = productsHTML
+
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+    button.addEventListener('click', () => {
+        const productName = (button.dataset.productName)
+
+        let matchingItem
+
+        cart.forEach((item) => {
+            if (productName === item.productName) {
+                matchingItem = item
+            }
+        })
+
+        if (matchingItem) {
+            matchingItem.quantity += 1
+        } else {
+            cart.push({
+                productName: productName,
+                quantity: 1
+            })
+        }
+
+        let cartQuantity = 0
+
+        cart.forEach((item) => {
+            cartQuantity += item.quantity
+        })
+
+        document.querySelector('.js-item-count').innerHTML = cartQuantity
+
+        console.log(cart)
+        console.log(cartQuantity)
+    })
+})
+
+    
